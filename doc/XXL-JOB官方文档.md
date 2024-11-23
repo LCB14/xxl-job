@@ -950,7 +950,7 @@ docker run -e PARAMS="--spring.datasource.url=jdbc:mysql://127.0.0.1:3306/xxl_jo
     ### 执行器端口号 [选填]：小于等于0则自动获取；默认端口为9999，单机部署多个执行器时，注意要配置不同执行器端口；
     xxl.job.executor.port=9999
     ### 执行器运行日志文件存储磁盘路径 [选填] ：需要对该路径拥有读写权限；为空则使用默认路径；
-    xxl.job.executor.logpath=/data/applogs/xxl-job/jobhandler
+    xxl.job.executor.logpath=/Users/lichangbao/logs/jobhandler
     ### 执行器日志文件保存天数 [选填] ： 过期日志自动清理, 限制值大于等于3时生效; 否则, 如-1, 关闭自动清理功能；
     xxl.job.executor.logretentiondays=30
 
@@ -1512,7 +1512,7 @@ XXL-JOB会为每次调度请求生成一个单独的日志文件，需要通过 
 
 (历史版本通过重写LOG4J的Appender实现，存在依赖限制，该方式在新版本已经被抛弃)
 
-日志文件存放的位置可在“执行器”配置文件进行自定义，默认目录格式为：/data/applogs/xxl-job/jobhandler/“格式化日期”/“数据库调度日志记录的主键ID.log”。
+日志文件存放的位置可在“执行器”配置文件进行自定义，默认目录格式为：/Users/lichangbao/logs/jobhandler/“格式化日期”/“数据库调度日志记录的主键ID.log”。
 
 在JobHandler中开启子线程时，子线程将会把日志打印在父线程即JobHandler的执行日志中，方便日志追踪。
 

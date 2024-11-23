@@ -478,7 +478,7 @@ The concret content of configuration file as follows:
     xxl.job.executor.port=9999
     
     ### xxl-job log path：runtime log path of the job instance
-    xxl.job.executor.logpath=/data/applogs/xxl-job/jobhandler/
+    xxl.job.executor.logpath=/Users/lichangbao/logs/jobhandler/
     
     ### xxl-job, access token：xxl-job access token,enabled if it not blank
     xxl.job.accessToken=
@@ -940,7 +940,7 @@ XXL-JOB will generate a log file for every schedule request, the log info will b
 
 (history version is implemented by overriding LOG4J’s Appender so it exists dependency restrictions, The way has been discraded in the new version)
 
-The location of log file can be specified in executor configuration file, default pattern is : /data/applogs/xxl-job/jobhandler/formatted date/primary key for database scheduling log records.log”.
+The location of log file can be specified in executor configuration file, default pattern is : /Users/lichangbao/logs/jobhandler/formatted date/primary key for database scheduling log records.log”.
 
 When start child thread in JobHandler, child thread will print log in parent JobHandler thread’s execute log in order to trace execute log.
 
